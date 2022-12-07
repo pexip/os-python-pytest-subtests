@@ -1,0 +1,31 @@
+Source: python-pytest-subtests
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Michael Fladischer <fladi@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all:any,
+ python3-pytest (>= 7),
+ python3-pytest-xdist,
+ python3-setuptools,
+ python3-setuptools-scm,
+Standards-Version: 4.6.0.1
+Homepage: https://github.com/pytest-dev/pytest-subtests/
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-pytest-subtests
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-pytest-subtests.git
+Rules-Requires-Root: no
+
+Package: python3-pytest-subtests
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: unittest subTest() support and subtests fixture (Python3 version)
+ unittest subTest() support and subtests fixture. It adds support for
+ TestCase.subTest and a new subtests fixture, providing similar functionality
+ for pure pytest tests.
+ .
+ This package contains the Python 3 version of the library.

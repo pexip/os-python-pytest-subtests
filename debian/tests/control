@@ -1,0 +1,6 @@
+Tests: upstream
+Depends:
+ @,
+ @builddeps@,
+ python3-all:any
+Restrictions: allow-stderr
